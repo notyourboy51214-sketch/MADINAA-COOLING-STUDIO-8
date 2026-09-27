@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0C1015;
+    --surface-base: #121820;
+    --surface-elevated: #18222C;
+    --surface-panel: #202D3A;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text-primary: #F3F4F6;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+    --ember-accent: #FF6B2C;
+    --ember-hover: #E05316;
+    --emerald-whatsapp: #25D366;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', -apple-system, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.font-body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle architectural grid pattern */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Custom scroll margin for smooth section anchors */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Precision Hairline borders for engineering layout */
+.tech-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-border-r {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-border-l {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Pulse animation for live online technician status */
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+}
+
+.animate-status {
+  animation: status-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

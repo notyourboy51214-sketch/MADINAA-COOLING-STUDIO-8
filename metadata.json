@@ -1,0 +1,6 @@
+{
+  "name": "Madina Cooling Service Point",
+  "description": "Air conditioning repair, servicing, installation, and gas-leak-related service in PIA Housing Scheme, Lahore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
